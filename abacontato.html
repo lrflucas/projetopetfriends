@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - PetFriends</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">PetFriends</a></h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="adote.html">Adote</a></li>
+                <li><a href="abacadastro.html">Cadastro</a></li>
+                <li><a href="abacontato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+     <br>
+     
+    <!-- Seção Contato -->
+    <section class="form-container">
+        <h2>Entre em contato conosco!</h2>
+
+        <!-- Caixa de Informações de Contato -->
+        <div class="contato-info">
+            <h3>Informações de contato</h3>
+            <p><strong>Telefone:</strong> (11) 99999-1234</p>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123, Bairro Fictício, São Paulo - SP, CEP 01234-567</p>
+        </div>
+
+        <!-- Caixa de Formulário de Contato -->
+        <div class="form-box">
+            <h3>Envie sua mensagem</h3>
+            <form action="#" method="POST" class="form-cadastro">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

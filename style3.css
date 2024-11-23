@@ -1,0 +1,165 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    background-image: url('img/fundotelacadastro.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para o container do formulário */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+/* Estilos para os textos */
+h2 {
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+/* Caixa de Informações de Contato */
+.contato-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contato-info h3 {
+    font-size: 1.6em;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+.contato-info p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Caixa de Formulário de Contato */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h3 {
+    font-size: 1.6em;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilo para os labels */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo para os inputs */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo para o botão de envio */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.btn-submit:hover {
+    background-color: #9c4dcc;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    background-color: rgba(248, 247, 247, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    color: #9c00cc;
+}
+
+header .logo h1 a {
+    text-decoration: none;
+  }
+  
+  header .logo h1 a:hover {
+    text-decoration: none;
+    color: #ff6f91;
+  }
+  
+  header .logo h1 a:active {
+    color: #7E4068;
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9c00cc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ff6f91;
+}
