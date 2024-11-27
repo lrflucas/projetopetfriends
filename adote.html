@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adote - PetFriends</title>
-    <link rel="stylesheet" href="style4.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/adote.css">
 </head>
 <body>
 
@@ -15,9 +20,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#adote">Adote</a></li>
-                <li><a href="abacadastro.html">Cadastro</a></li>
+                <li><a href="adote.html">Adote</a></li>
+                <li id="nav-cadastro"><a href="abacadastro.html">Cadastro</a></li>
+                <li id="nav-login"><a href="login.html">Login</a></li>
                 <li><a href="abacontato.html">Contato</a></li>
+                <li id="nav-logout" style="display:none;"><a href="#" id="logout">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +38,7 @@
             <div class="animals">
                 <!-- Card Animal 1 -->
                 <div class="animal-card">
-                    <img src="img/gato1.jpeg" alt="Miau">
+                    <img src="assets/css/img/gato1.jpeg" alt="Luna">
                     <h3>Luna</h3>
                     <p><strong>Espécie:</strong> Gato</p>
                     <p><strong>Raça:</strong> SRD (Sem Raça Definida)</p>
@@ -42,11 +49,11 @@
                     <p><strong>Vacinas:</strong> Vacinas em dia (raiva, panleucopenia, rinotraqueíte e calicivírus).</p>
                     <p><strong>Vermífugo:</strong> Desverminado regularmente.</p>
                     <p><strong>Esterilização:</strong> Castrada.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Luna</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Luna')">Adote Luna</a>
                 </div>
 <!-- Card Animal 2 -->
                 <div class="animal-card">
-                    <img src="img/gato2.jpeg" alt="Bolinha e seus filhos">
+                    <img src="assets/css/img/gato2.jpeg" alt="Nina">
                     <h3>Nina</h3>
                     <p><strong>Espécie:</strong> Gato</p>
                     <p><strong>Raça:</strong> SRD (Sem Raça Definida)</p>
@@ -57,12 +64,12 @@
                     <p><strong>Vacinas:</strong> Vacinas em dia.</p>
                     <p><strong>Vermífugo:</strong> Desverminada recentemente.</p>
                     <p><strong>Esterilização:</strong> Adoção condicional à castração (realizaremos a castração antes da adoção).</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Nina</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Nina')">Adote Nina</a>
                 </div>
 
                 <!-- Card Animal 3 -->
                 <div class="animal-card">
-                    <img src="img/gato3.jpeg" alt="Léo">
+                    <img src="assets/css/img/gato3.jpeg" alt="Léo">
                     <h3>Léo</h3>
                     <p><strong>Espécie:</strong> Gato</p>
                     <p><strong>Raça:</strong> SRD (Sem Raça Definida)</p>
@@ -73,12 +80,12 @@
                     <p><strong>Vacinas:</strong> Todas as vacinas em dia.</p>
                     <p><strong>Vermífugo:</strong> Desverminado.</p>
                     <p><strong>Esterilização:</strong> Castrado.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Léo</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Léo')">Adote Léo</a>
                 </div>
 
                 <!-- Card Animal 4 -->
                 <div class="animal-card">
-                    <img src="img/gato4.png" alt="Nina">
+                    <img src="assets/css/img/gato4.png" alt="Bolinha e seus filhos">
                     <h3>Bolinha e seus filhos</h3>
                     <p><strong>Espécie:</strong> Gato</p>
                     <p><strong>Raça:</strong> SRD (Sem Raça Definida)</p>
@@ -89,12 +96,12 @@
                     <p><strong>Vacinas:</strong> Todas as vacinas em dia.</p>
                     <p><strong>Vermífugo:</strong> Desverminada regularmente.</p>
                     <p><strong>Esterilização:</strong> Castrada.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Bolinha e seus filhos</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Bolinha e seus filhos')">Adote Bolinha e seus filhos</a>
                 </div>
 
                 <!-- Card Animal 5 -->
                 <div class="animal-card">
-                    <img src="img/cachorro1.jpeg" alt="Lila">
+                    <img src="assets/css/img/cachorro1.jpeg" alt="Lila">
                     <h3>Lila</h3>
                     <p><strong>Espécie:</strong> Cão</p>
                     <p><strong>Raça:</strong> SRD (Poodle com Vira-lata)</p>
@@ -105,11 +112,11 @@
                     <p><strong>Vacinas:</strong> Vacinas em dia.</p>
                     <p><strong>Vermífugo:</strong> Desverminada recentemente.</p>
                     <p><strong>Esterilização:</strong> Adoção condicional à castração (realizaremos a castração antes da adoção).</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Lila</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Lila')">Adote Lila</a>
                 </div>
 <!-- Card Animal 6 -->
                 <div class="animal-card">
-                    <img src="img/cachorro2.png" alt="Thor">
+                    <img src="assets/css/img/cachorro2.png" alt="Thor">
                     <h3>Thor</h3>
                     <p><strong>Espécie:</strong> Cão</p>
                     <p><strong>Raça:</strong> Border Collie</p>
@@ -120,12 +127,12 @@
                     <p><strong>Vacinas:</strong> Vacinas em dia (vacinado contra raiva, cinomose, parvovirose e hepatite infecciosa).</p>
                     <p><strong>Vermífugo:</strong> Desverminado regularmente.</p>
                     <p><strong>Esterilização:</strong> Castrado.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Thor</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Thor')">Adote Thor</a>
                 </div>
 
                 <!-- Card Animal 7 -->
                 <div class="animal-card">
-                    <img src="img/cachorro3.jpeg" alt="Bella e Lady">
+                    <img src="assets/css/img/cachorro3.jpeg" alt="Bella e Lady">
                     <h3>Bella e Lady</h3>
                     <p><strong>Espécie:</strong> Cão</p>
                     <p><strong>Raça:</strong> Não definida, mistura de vira-lata com pinsher</p>
@@ -136,12 +143,12 @@
                     <p><strong>Vacinas:</strong> Todas as vacinas em dia.</p>
                     <p><strong>Vermífugo:</strong> Desverminada.</p>
                     <p><strong>Esterilização:</strong> Castrada.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Bella e Lady</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Bella e Lady')">Adote Bella e Lady</a>
                 </div>
 
                 <!-- Card Animal 8 -->
                 <div class="animal-card">
-                    <img src="img/cachorro4.png" alt="Max">
+                    <img src="assets/css/img/cachorro4.png" alt="Max">
                     <h3>Max</h3>
                     <p><strong>Espécie:</strong> Cão</p>
                     <p><strong>Raça:</strong> Pitbull</p>
@@ -152,11 +159,11 @@
                     <p><strong>Vacinas:</strong> Todas as vacinas em dia.</p>
                     <p><strong>Vermífugo:</strong> Desverminado regularmente.</p>
                     <p><strong>Esterilização:</strong> Castrado.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Max</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Max')">Adote Max</a>
                 </div>
 <!-- Card Animal 9 -->
                 <div class="animal-card">
-                    <img src="img/passarinho1.jpeg" alt="Chico e Léo">
+                    <img src="assets/css/img/passarinho1.jpeg" alt="Chico e Léo">
                     <h3>Chico e Léo</h3>
                     <p><strong>Espécie:</strong> Passarinho</p>
                     <p><strong>Raça:</strong> Passarinho</p>
@@ -167,11 +174,11 @@
                     <p><strong>Vacinas:</strong> Não requer vacinas específicas.</p>
                     <p><strong>Vermífugo:</strong> Desverminado.</p>
                     <p><strong>Esterilização:</strong> Não aplicável para aves.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Chico e Léo</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Chico e Léo')">Adote Chico e Léo</a>
                 </div>
                    <!-- Card Animal 10 -->
                    <div class="animal-card">
-                    <img src="img/passarinho2.jpeg" alt="Pipo">
+                    <img src="assets/css/img/passarinho2.jpeg" alt="Pipo">
                     <h3>Pipo</h3>
                     <p><strong>Espécie:</strong> Periquito Australiano</p>
                     <p><strong>Raça:</strong> Periquito Australiano (Melhorado)</p>
@@ -182,12 +189,12 @@
                     <p><strong>Vacinas:</strong> Não requer vacinações específicas.</p>
                     <p><strong>Vermífugo:</strong> Desverminado.</p>
                     <p><strong>Esterilização:</strong> Não aplicável para aves.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Pipo</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Pipo')">Adote Pipo</a>
                 </div>
 
                 <!-- Card Animal 11 -->
                 <div class="animal-card">
-                    <img src="img/passarinho3.jpeg" alt="Fifi">
+                    <img src="assets/css/img/passarinho3.jpeg" alt="Fifi">
                     <h3>Fifi</h3>
                     <p><strong>Espécie:</strong> Calopsita</p>
                     <p><strong>Raça:</strong> Calopsita de face amarela</p>
@@ -198,12 +205,12 @@
                     <p><strong>Vacinas:</strong> Não são necessárias vacinas específicas.</p>
                     <p><strong>Vermífugo:</strong> Desverminada regularmente.</p>
                     <p><strong>Esterilização:</strong> Não aplicável para aves.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Fifi</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Fifi')">Adote Fifi</a>
                 </div>
 
                 <!-- Card Animal 12 -->
                 <div class="animal-card">
-                    <img src="img/passarinho4.jpeg" alt="Lili">
+                    <img src="assets/css/img/passarinho4.jpeg" alt="Lili">
                     <h3>Lili</h3>
                     <p><strong>Espécie:</strong> Canário</p>
                     <p><strong>Raça:</strong> Canário-do-reino</p>
@@ -214,7 +221,7 @@
                     <p><strong>Vacinas:</strong> Não são necessárias vacinas específicas.</p>
                     <p><strong>Vermífugo:</strong> Desverminada e sem sinais de doenças.</p>
                     <p><strong>Esterilização:</strong> Não aplicável para aves.</p>
-                    <a href="abacadastro.html" class="adote-button">Adote Lili</a>
+                    <a href="posadocao.html" class="adote-button" onclick="adotarAnimal('Lili')">Adote Lili</a>
                 </div>
             </div>
         </div>
@@ -232,6 +239,6 @@
     </div>
   </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/adote.js"></script>
 </body>
 </html>

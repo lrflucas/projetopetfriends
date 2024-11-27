@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PetFriends</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">PetFriends</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="adote.html">Adote</a></li>
+                <li><a href="abacadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="abacontato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="loginForm">
+        <h2>Login</h2>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            <a>Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite a sua senha"/>
+            <a>Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn-submit">Continuar</button>
+        </div>
+        
+        <br>
+        <br>
+        <div id="esqueci-senha">
+            <a href="#">Esqueci minha senha!</a>
+            <br>
+            <a href="abacadastro.html">Ainda não tenho cadastro!</a>
+        </div>
+    </form>
+
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

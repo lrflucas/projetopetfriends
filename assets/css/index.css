@@ -3,13 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Corpo do site */
 body {
-  font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #ff6f91, #ffcc00, #9c00cc); /* Degradê de fundo */
-  color: #333;
   line-height: 1.6;
   /* Adicionando a imagem de fundo ao corpo da página */
   background-image: url('img/capacabecalho.png');  /* Caminho para a sua imagem */

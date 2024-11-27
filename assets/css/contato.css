@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Corpo do site */
@@ -11,8 +12,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    color: #333;
     line-height: 1.6;
 }
 
@@ -78,20 +77,40 @@ h2 {
 /* Estilo para os labels */
 label {
     font-weight: bold;
-    color: #333;
     display: block;
     margin-bottom: 5px;
+    display: inline-block;
+    transition: 0.15s linear;
+    align-self: flex-start;
+}
+
+label:focus-within {
+    color: #8d3dc8;
 }
 
 /* Estilo para os inputs */
 input[type="text"], 
-input[type="email"], 
+input[type="email"] {
+    width: 100%;
+    padding: 1rem 0 0 0.5rem 0;
+    border: 2px solid #dfdfdf;
+    border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+    transition: 0.15s linear;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+}
+
 textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 1rem 0 0 0.5rem 0;
+    border: 2px solid #dfdfdf;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 1rem;
+    display: block;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
 }
 
 /* Estilo para o botão de envio */

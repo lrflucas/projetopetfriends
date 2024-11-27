@@ -1,0 +1,198 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Corpo do site */
+body {
+    background-image: linear-gradient(120deg, #ffd7cc 30%, #81259d 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+}
+
+/* Estilo para o container do formulário */
+.form-container {
+    background-color: #fafafa;
+    padding: 5rem 1.25rem;
+    border-radius: 3.125rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin: 9.375rem auto;
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+    box-sizing: 0 0.188rem 0.313rem rgba(0, 0, 0);
+    overflow: hidden;   
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os textos */
+h2 {
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+.form-cadastro{
+    padding: 18px;
+}
+
+/* Estilo para os grupos de formulário */
+.form-group {
+    margin-bottom: 8px;
+    text-align: left;
+    padding-bottom: 18px;
+    position: relative;
+
+}
+
+/* Estilo para os labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: 0.15s linear;
+    align-self: flex-start;
+}
+
+label:focus-within {
+    color: #8d3dc8;
+}
+
+/* Estilo para os inputs */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="cpf"],
+input[type="password"] {
+    width: 100%;
+    padding: 1rem 0 0 0.5rem 0;
+    border: 2px solid #dfdfdf;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: block;
+    transition: 0.15s linear;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted; 
+}
+
+input :focus{
+    outline: none;
+    border: currentColor;
+}
+
+.form-group a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;    
+    visibility: hidden; 
+}
+
+/* Estilo para o botão de cadastro */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.btn-submit:hover {
+    background-color: #9c4dcc;
+}
+
+.form-group.error input{
+    border-color: #ff3b25;
+}
+
+.form-group.error a{
+    color: #ff3b25;
+    visibility: visible;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #6a1b9a;
+    transition: color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    color: #9c4dcc;
+}
+
+.form-group {
+    position: relative;
+}
+
+.visualizar-senha {
+    width: 20px;
+    margin-top: 20px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    background-color: rgba(248, 247, 247, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    color: #9c00cc;
+}
+
+header .logo h1 a {
+    text-decoration: none;
+  }
+  
+header .logo h1 a:hover {
+    text-decoration: none;
+    color: #ff6f91;
+}
+  
+header .logo h1 a:active {
+    color: #7E4068;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9c00cc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ff6f91;
+}

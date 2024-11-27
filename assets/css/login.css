@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Corpo do site */
+body {
+    background: linear-gradient(120deg, #ffd7cc 0%, #81259d 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    line-height: 1.6;
+}
+
+#loginForm {
+    background-color: #fafafa;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin: 9.375rem auto;
+    width: 100%;
+    box-sizing: 0 0.188rem 0.313rem rgba(0, 0, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 28rem;
+    padding: 5rem 1.25rem;
+    border-radius: 3.125rem;
+}
+
+#esqueci-senha {
+    text-align: center;
+}
+
+#esqueci-senha a {
+    text-decoration: none;
+}
+  
+#esqueci-senha a:hover {
+    text-decoration: none;
+    color: #ff6f91;
+}
+
+#esqueci-senha a:active {
+    color: #7E4068;
+}
+
+/* Estilos para os textos */
+h2 {
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os grupos de formulário */
+.form-group {
+    margin-bottom: 8px;
+    text-align: left;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+/* Estilo para os labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: 0.15s linear;
+    align-self: flex-start;
+}
+
+label:focus-within {
+    color: #8d3dc8;
+}
+
+/* Estilo para os inputs */
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 1rem 0 0 0.5rem 0;
+    border: 2px solid #dfdfdf;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: block; 
+    transition: 0.15s linear;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+}
+
+input :focus{
+    outline: none;
+    border: currentColor;
+}
+
+.form-group a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;    
+    visibility: hidden; 
+}
+
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, 
+button:focus{
+    outline: none;
+    background: #6a1b9a;
+    color: #fff;
+}
+
+/* Efeito de hover no botão */
+.btn-submit:hover {
+    background-color: #9c4dcc;
+}
+
+.form-group.error input{
+    border-color: #ff3b25;
+}
+
+.form-group.error a{
+    color: #ff3b25;
+    visibility: visible;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; /* Defina o tamanho adequado para o ícone */
+    height: 20px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    background-color: rgba(248, 247, 247, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    color: #9c00cc;
+}
+
+header .logo h1 a {
+    text-decoration: none;
+  }
+  
+  header .logo h1 a:hover {
+    text-decoration: none;
+    color: #ff6f91;
+  }
+  
+  header .logo h1 a:active {
+    color: #7E4068;
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9c00cc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ff6f91;
+}

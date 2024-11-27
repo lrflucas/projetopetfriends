@@ -1,0 +1,175 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Corpo do site */
+body {
+    line-height: 1.6;
+    background-image: url('img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    background-color: rgba(248, 247, 247, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    color: #9c00cc;
+}
+
+header .logo h1 a {
+    text-decoration: none;
+  }
+  
+  header .logo h1 a:hover {
+    text-decoration: none;
+    color: #ff6f91;
+  }
+  
+  header .logo h1 a:active {
+    color: #7E4068;
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9c00cc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ff6f91;
+}
+
+/* Seção de Adoção */
+.adote {
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+}
+
+.adote h2, h3 {
+    color: #6a1b9a;
+    margin-bottom: 30px;
+}
+
+/* Container para os cards */
+.animals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Card do animal */
+.info-pos-adocao .animal-card {
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.animal-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.animal-card img {
+    width: 90%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.animal-card h3 {
+    font-size: 1.6em;
+    color: #6a1b9a;
+    margin: 10px 0;
+}
+
+.animal-card p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Estilo do botão "Adote" */
+.adote-button {
+    display: inline-block;
+    margin-top: 10px;
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #9c00cc;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.adote-button:hover {
+    background-color: #ff6f91;
+}
+
+/* Rodapé */
+footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+  
+footer ul li {
+    display: inline;
+    margin-left: 20px;
+}
+  
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+  
+footer ul li a:hover {
+    color: #ff6f91;
+}
+
+footer {
+    background-image: url('img/rodapeimg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    margin-top: 300px;
+    background-color: #333;
+    color: black;
+    text-align: center;
+}
